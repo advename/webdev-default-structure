@@ -53,10 +53,16 @@ Inside the `src/` folder, we have
 - `styles` is the folder containing our main.css file but also all the primary.scss files and the module files
 
 
-## Start with
+## Installation / Download
 Clone this repository to an empty folder, change the GitHub url to yours using:
 
     git remote set-url origin https://github.com/myName/GitTest.git
+  
+  and run
+
+      npm install
+
+   to install the dependencies.
     
 ## How to use
 To run the **scss** compiler, write the following command in your terminal
@@ -86,13 +92,20 @@ If you're done with coding everything inside your `src/` folder, write the follo
    And upload the files & folder inside the `dist/` folder to your webserver.
    
 **What's the difference?**
-Well, using `npm run build` takes everything inside the  `src/` folder and uses parcel to minify, uglify and transpile your code. This way we reduce the file size and make the website available for older website.
+Well, using `npm run build` takes everything from the  `src/` folder and uses parcel to minify, uglify and transpile your code. This way we reduce the file size and make the website available for older website.
 
 ## Scalability
 
 Eventough this seems to be for many projects overkill or not enough, I believe that this should be a good standard file/folder structure as it allows scalability to a bigger project while still keep it simple.
 
-
+## Javascript libraries (vendors)
+This boilerplate comes preshipped with a couple of libraries. Delete those which you don't need.
+- [HammerJS](https://hammerjs.github.io/) - Eases the process to work with touch movements
+- [Is.JS](https://is.js.org/) - Checks if is mobile, email, ...
+- [ValidatorJS](https://github.com/chriso/validator.js) - Checks if email, credit card,... (use with forms)
+- [Greensock](https://greensock.com/) - Use animation with a better performance
+- [SVGInject](https://github.com/iconfu/svg-inject) - Uses <img src="dog.svg> and injects the whole svg in the html so you can style it.
+- [moment](https://github.com/moment/moment) - Time / Date library
 
 ## Reference
 
@@ -101,4 +114,3 @@ This project is based on following references/methods:
 - [Bem naming convention](https://en.bem.info/)
 - [Bootstrap Media Queries Breakpoints](https://v4-alpha.getbootstrap.com/layout/overview/#responsive-breakpoints)
 - [idiomatic CSS](https://github.com/necolas/idiomatic-css)
-
